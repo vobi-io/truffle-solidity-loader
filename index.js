@@ -6,8 +6,8 @@ var TruffleCompiler = require('truffle-core/lib/commands/compile')
 var TruffleMigrator = require('truffle-migrate')
 
 /* Internal Module Dependencies */
-var Logger = require('./lib/logger_decorator')
-var BuildOptionNormalizer = require('./lib/build_option_normalizer')
+var Logger = require('./lib/loggerDecorator')
+var BuildOptionNormalizer = require('./lib/buildOptionNormalizer')
 var {compiledContractExists, returnContractAsSource} = require('./lib/contract')
 
 /* Native Node Imports */
