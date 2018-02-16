@@ -12,7 +12,6 @@
     "chalk": "^2.3.0",
     "find-up": "^1.1.2",
     "left-pad": "^1.2.0",
-    "loader-utils": "^1.1.0",
     "lodash.merge": "^4.6.0",
     "mkdirp": "^0.5.1",
     "solidity-parser-antlr": "^0.2.7",

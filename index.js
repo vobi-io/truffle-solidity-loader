@@ -1,13 +1,12 @@
 /* External Module Dependencies */
-var loaderUtils = require('loader-utils')
 var Web3 = require('web3')
 var SolidityParser = require('solidity-parser-antlr')
 var TruffleCompiler = require('truffle-core/lib/commands/compile')
 var TruffleMigrator = require('truffle-migrate')
 
 /* Internal Module Dependencies */
-var Logger = require('./lib/loggerDecorator')
-var BuildOptionNormalizer = require('./lib/buildOptionNormalizer')
+var Logger = require('./lib/logger_decorator')
+var BuildOptionNormalizer = require('./lib/build_option_normalizer')
 var { compiledContractExists, returnContractAsSource } = require('./lib/contract')
 
 /* Native Node Imports */
@@ -23,7 +22,7 @@ module.exports = function (source) {
   var config = BuildOptionNormalizer.normalize({
     working_directory: process.cwd(),
     logger: Logger
-  }, loaderUtils.getOptions(this))
+  }, this.query)
 
   var compilationFinished = this.async()
   var contractPath = this.context
