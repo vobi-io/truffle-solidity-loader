@@ -15,7 +15,10 @@
     "findup": "^0.1.5",
     "lodash.merge": "^4.6.0",
     "solidity-parser": "^0.1.0",
-    "truffle": "^4.0.6",
+    "truffle-config": "^1.0.4",
+    "truffle-contract": "^3.0.3",
+    "truffle-core": "^4.0.6",
+    "truffle-migrate": "^2.0.1",
     "web3": "^0.17.0-alpha"
   }
 }
