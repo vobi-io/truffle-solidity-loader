@@ -20,6 +20,6 @@
     "truffle-contract": "^3.0.3",
     "truffle-core": "^4.0.6",
     "truffle-migrate": "^2.0.1",
-    "web3": "^1.0.0-beta.30"
+    "web3": "0.20.3"
   }
 }
